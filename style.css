@@ -104,7 +104,7 @@ ul li a:hover {
   align-items: center;
   -webkit-animation: morph 8s ease-in-out infinite;
   animation: morph 8s ease-in-out infinite;
-  background-image: url(./assets/samurai.webp);
+  background-image: url(/assets/samurai.webp);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
