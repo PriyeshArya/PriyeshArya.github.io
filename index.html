@@ -1,54 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="icon" href="./assets/icon.svg" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="/assets/favicon.png" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Hi! I am Priyesh. Here in this Portfolio you will find a brief info about me, my projects and my contact info. "
+    />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="Priyesh Arya Portfolio."
+      content="Know Me and my Silly Projects"
+    />
+    <link rel="apple-touch-icon" href="./assets/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500&amp;display=swap"
     />
-
+    <script
+      src="https://kit.fontawesome.com/a388be2306.js"
+      crossorigin="anonymous"
+      defer="defer"
+    ></script>
     <title>PriyeshArya.me</title>
-    <link rel="stylesheet" href="style.css" />
+    <link href="style.css" rel="stylesheet" />
+    <script defer="defer" src="index.js"></script>
   </head>
   <body>
-    <div class="header">
-      <div class="logo">
-        Priyesh <span class="title">Arya</span><span class="domain">.me</span>
-      </div>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
       <nav>
-        <ul class="navigation">
+        <h3 class="logo">
+          Priyesh<span class="title">Arya</span><span class="domain">.me</span>
+        </h3>
+        <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="#project">Projects</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><i class="fa-solid fa-bars-staggered mobile-menu"></i></li>
         </ul>
       </nav>
-    </div>
-
-    <section id="home">
-      <div class="description">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
-        porro doloribus sapiente voluptates error veritatis a fuga quo corrupti
-        eum eaque molestiae nesciunt? Alias vero voluptatibus saepe illum
-        perspiciatis ea?
+      <div class="mobile-nav closed-menu">
+        <span><i class="fa-solid fa-xmark"></i></span>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
-      <div class="profilePhoto"></div>
-    </section>
-    <section id="project">
-      <div class="projects"></div>
-    </section>
-    <section id="about"></section>
-    <section id="contact"></section>
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="content">
+            <div class="hero-main">
+              <div class="hero-text">
+                <h1>Front-End Web Developer</h1>
+                <img src="/assets/waving.png" alt="waving_hand" />
+                <p>
+                  Hi, I'm Priyesh Arya. A Passionate Front-end Web Developer
+                  crafting stunning experiences. Open to global opportunities,
+                  location no barrier. 🚢📍
+                </p>
+                <span
+                  ><a
+                    aria-label="linkedin"
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/PriyeshArya"
+                    ><i class="fa-brands fa-linkedin"></i></a
+                  ><a
+                    aria-label="github"
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://github.com/PriyeshArya"
+                    ><i class="fa-brands fa-github"></i></a
+                ></span>
+              </div>
+              <div class="hero-img"></div>
+            </div>
+            <div class="skills">
+              <p>Tech Stack Used</p>
+              <div class="logos">
+                <ul>
+                  <li>
+                    <img
+                      src="/assets/html5.svg"
+                      title="HTML5"
+                      alt="skill-icon"
+                    />
+                  </li>
+                  <li>
+                    <img src="/assets/css3.svg" title="CSS3" alt="skill-icon" />
+                  </li>
+                  <li>
+                    <img
+                      src="/assets/javascript.svg"
+                      title="JavaScript"
+                      alt="skill-icon"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about-content">
+            <div class="img-side">
+              <img
+                src="/assets/working-emoji.png"
+                alt="emoji"
+                class="work-emoji"
+              /><img
+                src="/assets/working.webp"
+                alt="mee"
+                class="img-side__main-img"
+              /><span>
+                <img
+                  src="/assets/bordertext.svg"
+                  alt="Front-End Web Developer"
+                />
+              </span>
+            </div>
+            <div class="text-side">
+              <h3>About me</h3>
+              <h4>
+                A dedicated Front-end Developer <br />
+                looking for challenges and interesting projects to collaborate.
+                📍
+              </h4>
+              <p>
+                As a Junior Front-End Developer, I possess an impressive set of
+                skills in HTML, CSS and JavaScript. I excel in designing and
+                maintaining responsive websites that offer a smooth user
+                experience. My expertise lies in crafting dynamic, engaging
+                interfaces through writing clean and optimized code and
+                utilizing cutting-edge development tools and techniques. I am
+                also a team player who thrives in collaborating with
+                cross-functional teams to produce outstanding web applications.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <script src="index.js"></script>
+      <!-- Project Section -->
+      <section id="projects" class="project">
+        <div class="container">
+          <div class="project-content">
+            <p>portfolio</p>
+            <h3>Each project is a unique piece of development 🧩</h3>
+            <div class="projects-grid">
+              <!-- Project Showcase Style 1 -->
+              <!-- Left Side: Image -->
+              <!-- Right Side: Description -->
+
+              <div class="pro pro__1 undefined">
+                <div class="pro__img">
+                  <a target="_blank" href="" rel="noreferrer"
+                    ><img
+                      src="/assets/lppm.jpg"
+                      alt="Local Private Password Manager"
+                      style="
+                        transform: translateY(0%);
+                        transition: transform 10s ease-in-out 0s;
+                      "
+                  /></a>
+                </div>
+                <div class="pro__text">
+                  <h3>Local Private Password Manager 🔐</h3>
+                  <p>
+                    A C++ console application to securely store and manage
+                    sign-in credentials. Features include adding, searching, and
+                    updating entries, with automated credential copying. Data is
+                    safely stored for uninterrupted access, even across
+                    closures.
+                  </p>
+                  <!-- <div class="stack">
+                    <p>React</p>
+                    <p>SCSS</p>
+                  </div> -->
+
+                  <!-- Update Project Links In Here -->
+                  <div class="links">
+                    <a target="_blank" href="" rel="noreferrer"
+                      >Code <i class="fa-brands fa-github"></i></a
+                    ><a target="_blank" href="" rel="noreferrer"
+                      >Live Demo<i
+                        class="fa-solid fa-arrow-up-right-from-square link-icon"
+                      ></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project Showcase Style 2 -->
+              <!-- Left Side: Description -->
+              <!-- Right Side: Image -->
+
+              <!-- <div class="pro pro__1 reversed-proj">
+                <div class="pro__img">
+                  <a
+                    target="_blank"
+                    href="#"
+                    rel="noreferrer"
+                    ><img
+                      src=""
+                      alt="website"
+                      style="
+                        transform: translateY(0%);
+                        transition: transform 10s ease-in-out 0s;
+                      "
+                  /></a>
+                </div>
+                <div class="pro__text">
+                  <h3>Project Name 🪙</h3>
+                  <p>
+                    Project Description
+                  </p>
+                  <div class="stack">
+                    <p>React</p>
+                    <p>SCSS</p>
+                  </div>
+                  <div class="links">
+                    <a
+                      target="_blank"
+                      href="#"
+                      rel="noreferrer"
+                      >Code <i class="fa-brands fa-github"></i></a
+                    ><a
+                      target="_blank"
+                      href="#"
+                      rel="noreferrer"
+                      >Live Demo<i
+                        class="fa-solid fa-arrow-up-right-from-square link-icon"
+                      ></i
+                    ></a>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="contact__content">
+            <div class="contact__title">
+              <p>contact</p>
+              <h3>Have an Idea? Let's Collaborate! 👇</h3>
+            </div>
+            <div class="contact__icons">
+              <div class="contact__icon-box">
+                <span><i class="fa-solid fa-map-location-dot"></i></span>
+                <div class="contact__info">
+                  <h3>Location</h3>
+                  <p>India</p>
+                </div>
+              </div>
+              <div class="contact__icon-box">
+                <span><i class="fa-solid fa-envelope-open-text"></i></span>
+                <div class="contact__info">
+                  <h3>Mail</h3>
+                  <a href="mailto:priyesh.arya6@gmail.com"
+                    >priyesh.arya6@gmail.com</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="container">
+          <div class="footerc">
+            <h3>Copyright © 2023. All rights are reserved</h3>
+            <div class="footerc__socials">
+              <a
+                aria-label="linkedin"
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/in/PriyeshArya/"
+                ><i class="fa-brands fa-linkedin"></i></a
+              ><a
+                aria-label="github"
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/PriyeshArya"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

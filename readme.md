@@ -2,4 +2,4 @@
 
 Domain: priyesharya.me
 
-Updated Version Coming Soon
+Upcoming Changes: Adding Resume Download Section
